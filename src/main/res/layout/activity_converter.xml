@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"/>
+
+    <TextView
+        android:id="@+id/titleGbpToCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GBP → Selected Currency"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingTop="12dp"
+        android:paddingBottom="6dp"/>
+
+    <LinearLayout
+        android:id="@+id/sectionGbpToCurrency"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/amountInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter amount"
+            android:inputType="numberDecimal"/>
+
+        <Spinner
+            android:id="@+id/directionSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/convertButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Convert"/>
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingTop="10dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/titleCurrencyToGbp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected Currency → GBP"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:paddingTop="20dp"
+        android:paddingBottom="6dp"/>
+
+    <LinearLayout
+        android:id="@+id/sectionCurrencyToGbp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/amountInput2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter amount"
+            android:inputType="numberDecimal"/>
+
+        <Button
+            android:id="@+id/convertButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Convert"/>
+
+        <TextView
+            android:id="@+id/resultText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingTop="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>
